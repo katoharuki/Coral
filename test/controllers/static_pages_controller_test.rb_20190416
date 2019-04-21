@@ -1,0 +1,19 @@
+require 'test_helper'
+
+class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+  test "should get top" do
+    get static_pages_top_url
+    assert_response :success
+  end
+
+  test "should get reference" do
+    get static_pages_reference_url
+    assert_response :success
+  end
+
+  test "should get add" do
+    get static_pages_add_url
+    assert_response :success
+  end
+
+end

@@ -1,16 +1,12 @@
 Rails.application.routes.draw do
   get '', to: 'posts#Coral'
-
-  root 'application#Coral'
   get 'posts/new', to: 'posts#new'
 
-  post 'posts', to: 'posts#create'
-
-  get 'posts/:id', to: 'posts#open'
-
-#あとで消す
   get 'static_pages/top'
+
   get 'static_pages/reference'
+
   get 'static_pages/add'
+
 #  root 'application#coral'
 end

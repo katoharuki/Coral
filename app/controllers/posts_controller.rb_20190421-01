@@ -1,0 +1,9 @@
+# Applicationcontrollerクラスを継承することで、クラスがコントローラと認識される
+class PostsController < ApplicationController
+    def Coral
+    end
+
+    def new
+        @post = Post.new
+    end
+end
