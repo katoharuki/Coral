@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root 'posts#Coral'
   get '', to: 'posts#Coral'
   get 'posts', to: 'posts#Coral'
 
