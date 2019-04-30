@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get '', to: 'posts#Coral'
-  root :to => 'application#Coral'
+  root :to => 'posts#Coral'
   get 'posts', to: 'posts#Coral'
 
   get 'posts/new', to: 'posts#new'
