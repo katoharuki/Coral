@@ -1,11 +1,11 @@
 <div class="d-flex align-items-center">
     <h1>顧客台帳</h1>
     <div class="ml-auto posts_button">
-        <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %> 
+        <a class="btn btn-outline-info" href="/posts/new" role="button">投稿</a>
     </div>
 </div>
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
-  <thead class="bg-info text-light">
+  <thead class="thead-dark">
     <tr>
       <th scope="col" style="width: 40px">No.</th>
       <th scope="col" style="width: 700px">ネイル状態所感</th>

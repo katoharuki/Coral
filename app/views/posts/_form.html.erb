@@ -1,0 +1,27 @@
+<%= form_for post do |f| %>
+    <div class="form-group">
+        <%= f.label :name, 'お客様名' %>
+        <%= f.text_field :name, class: 'form-control' %>
+        <small id="poster-tip" class="form-text text-muted">
+            お客様名を記入
+        </small>
+    </div>
+    <div class="form-group">
+        <%= f.label :title, 'ネイル状態所感' %>
+        <%= f.text_field :title, class: 'form-control' %>
+        <small id="title-tip" class="form-text text-muted">
+            よしなに書き込んで頂けると。
+        </small>
+    </div>
+    <div class="form-group">
+        <%= f.label :content, '詳細状態' %>
+        <%= f.text_area :content, class: 'form-control', rows:10 %>
+        <small id=content-tip" class="form-text text-muted">
+            お客様の生活習慣や好み対応策等、詳細情報を書く
+        </small>
+    </div>
+    <%= f.submit '投稿', class: 'btn btn-info btn-block' %>
+    <small id="submit-tip" class="form-text text-muted">
+        投稿する前に投稿内容を見直してください!
+    </small>
+<% end %>

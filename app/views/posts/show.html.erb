@@ -1,0 +1,9 @@
+<div class="d-flex align-items-center mt-4 mb-4">
+    <div class="ml-auto posts_button">
+        <%= link_to '台帳一覧', posts_path, class: "btn btn-outline-info" %>
+        <%= link_to '編集', edit_post_path(@post), class: "btn btn-outline-info" %>
+    </div>
+</div>
+
+<%= render @post %>
+
