@@ -1,25 +1,18 @@
 <div class="d-flex align-items-center">
     <h1>顧客台帳</h1>
     <div class="ml-auto posts_button">
-        <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %>
+        <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %> 
     </div>
 </div>
-
-<% if flash[:notice] %>
-    <div class="alert alert-primary"><%= flash[:notice] %></div>
-<% end %>
-
-
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
   <thead class="bg-info text-light">
     <tr>
       <th scope="col" style="width: 40px">No.</th>
-      <th scope="col" style="width: 500px">ネイル状態所感</th>
+      <th scope="col" style="width: 700px">ネイル状態所感</th>
       <th scope="col">お客様名</th>
       <th scope="col">初回ご来店日</th>
       <th scope="col">今回ご来店日</th>
-      <th scope="col">詳細情報</th>
-      <th scope="col">削除ボタン</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -31,9 +24,7 @@
             <td><%= post.created_at.to_s(:datetime_base) %></td>
             <td><%= post.updated_at.to_s(:datetime_base) %></td>
             <td><%= link_to '詳細', post, id: "detail-" + post.id.to_s, class: 'btn btn-outline-info' %></td>
-            <td><%= link_to "削除" , post, class: 'btn btn-outline-info', method: :delete, data: {confirm: "このお客様情報を削除しますか？", cancel: "キャンセル", commit: "削除する", title: "顧客データを削除します。"} %></td>
         </tr>
       <% end %>
   </tbody>
 </table>
-<%= paginate @posts %>

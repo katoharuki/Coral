@@ -1,20 +1,14 @@
 <div class="d-flex align-items-center">
     <h1>顧客台帳</h1>
     <div class="ml-auto posts_button">
-        <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %>
+        <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %> 
     </div>
 </div>
-
-<% if flash[:notice] %>
-    <div class="alert alert-primary"><%= flash[:notice] %></div>
-<% end %>
-
-
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
   <thead class="bg-info text-light">
     <tr>
       <th scope="col" style="width: 40px">No.</th>
-      <th scope="col" style="width: 500px">ネイル状態所感</th>
+      <th scope="col" style="width: 700px">ネイル状態所感</th>
       <th scope="col">お客様名</th>
       <th scope="col">初回ご来店日</th>
       <th scope="col">今回ご来店日</th>
@@ -36,4 +30,3 @@
       <% end %>
   </tbody>
 </table>
-<%= paginate @posts %>

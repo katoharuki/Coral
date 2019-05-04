@@ -4,12 +4,6 @@
         <%= link_to '投稿', new_post_path, class: "btn btn-outline-info" %>
     </div>
 </div>
-
-<% if flash[:notice] %>
-    <div class="alert alert-primary"><%= flash[:notice] %></div>
-<% end %>
-
-
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
   <thead class="bg-info text-light">
     <tr>
