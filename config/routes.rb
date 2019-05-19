@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'comments/create'
-
   get 'comments/destroy'
 
     root 'posts#index'
