@@ -6,5 +6,4 @@ Rails.application.routes.draw do
     root 'posts#index'
     # onlyを削除
     resources :posts
-    resources :comments, only: %i[create destroy]
 end

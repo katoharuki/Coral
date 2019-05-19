@@ -9,12 +9,3 @@
         cursor: pointer;
     }
 }
-
-.posts__searchForm {
-  display: inline-block;
-}
-
-.posts__select {
-  display: inline-block;
-  width: auto;
-}

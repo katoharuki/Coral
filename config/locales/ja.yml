@@ -6,3 +6,12 @@ ja:
             previous: 前
             next: 次
             truncate: ...
+    activerecord:
+        attributes:
+            post:
+                name: 名前
+                title: タイトル
+                content: 台帳内容
+            comment:
+                name: 名前
+                comment: コメント

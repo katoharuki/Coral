@@ -10,14 +10,8 @@
 #  updated_at :datetime         not null
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  title: MyString
-  content: MyText
-
-two:
-  name: MyString
-  title: MyString
-  content: MyText
+class Post < ApplicationRecord
+    validates :name, presence: true, length: { maximum: 10 }
+    validates :title, presence: true, length: { maximum: 30 }
+    validates :content, presence: true, length: { maximum: 1000 }
+end
