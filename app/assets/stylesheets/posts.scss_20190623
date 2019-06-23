@@ -27,3 +27,7 @@
   display: inline-block;
   width: auto;
 }
+.container {
+    max-width: max-content;
+    text-align:center;
+}
