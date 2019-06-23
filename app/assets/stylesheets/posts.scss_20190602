@@ -18,16 +18,3 @@
   display: inline-block;
   width: auto;
 }
-
-.posts__searchForm {
-  display: inline-block;
-}
-
-.posts__select {
-  display: inline-block;
-  width: auto;
-}
-
-.container {
-    max-width: max-content;
-}
