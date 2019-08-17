@@ -15,7 +15,6 @@ class PostsController < ApplicationController
 
     def create
        post = Post.create(post_params)
-       @user = User.find_by(id: params[:id])
        if post.save
           flash[:notice] = "「#{post.title}」の記事が投稿されました!"
           redirect_to post
@@ -29,7 +28,6 @@ class PostsController < ApplicationController
 
     def show
         @comment = Comment.new(post_id: @post.id)
-        @user = User.find_by(id: params[:id])
     end
 
 
